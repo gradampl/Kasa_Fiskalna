@@ -76,12 +76,13 @@ namespace Kasa_Fiskalna
 
                 if (klawisz == 'S' || klawisz == 's')
                 {
-                    Console.WriteLine("W sumie do zapłaty: ", +Zakupy.podajSume());
+                    Console.WriteLine("W sumie do zapłaty: " +Zakupy.podajSume());
                     Continue();
                 }
 
                 if (klawisz == 'X' || klawisz == 'x')
                 {
+                    Console.WriteLine("Podaj numer pozycji do skasowania.");
                     Zakupy.skasujProdukt();
                     Continue();
                 }

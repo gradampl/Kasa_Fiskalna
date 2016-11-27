@@ -112,6 +112,7 @@ namespace Kasa_Fiskalna
             try
             {
                 Zakupy.RemoveAt(doUsuniecia);
+                Console.WriteLine("Usunięto");
             }
             catch(Exception)
             {
@@ -132,7 +133,7 @@ namespace Kasa_Fiskalna
             string Hour = DateTime.Now.Hour.ToString();
             string Minute = DateTime.Now.Minute.ToString();
             string Second = DateTime.Now.Second.ToString();
-            string name = Day+Month+Year+Hour+Minute+Second;
+            string name = Day+Month+Year+Hour+Minute+Second+".txt";
             string line;
 
             FileStream fs = new FileStream(name, FileMode.CreateNew);
